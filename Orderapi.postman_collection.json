@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "84644923-980f-4cb1-8312-491a9623e364",
+		"name": "Orderapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"items\": [\n        {\n            \"name\": 0,\n            \"quantity\": 2\n        },\n        {\n            \"name\": 1,\n            \"quantity\": 3\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/order/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"new"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
