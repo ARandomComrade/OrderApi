@@ -6,18 +6,20 @@ import javax.persistence.Id;
 
 @Entity
 public class Item {
-    private String name;
+    private Fruit name;
     private Double price;
+
+    private int quantity;
 
     @Id
     @GeneratedValue
     private Long id;
 
-    public String getName() {
+    public Fruit getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(Fruit name) {
         this.name = name;
     }
 
@@ -36,5 +38,13 @@ public class Item {
     @Id
     public Long getId() {
         return id;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }

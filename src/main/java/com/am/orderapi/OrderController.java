@@ -12,7 +12,6 @@ public class OrderController {
 
     @PostMapping("/new")
     public Order postOrder(@RequestBody Order order) {
-        //return repository.save(order)
         return orderProvider.post(order);
     }
     /*
