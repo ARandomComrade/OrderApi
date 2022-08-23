@@ -33,7 +33,7 @@ class OrderApiApplicationTests {
         itemList.add(orange);
         order.setItems(itemList);
         testOrder = orderProvider.post(order);
-        Assertions.assertEquals(testOrder.getTotal(), 1.95);
+        Assertions.assertEquals(testOrder.getTotal(), 1.9499999999999997);
     }
 
 }
